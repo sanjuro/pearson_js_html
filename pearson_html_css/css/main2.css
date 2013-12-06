@@ -1,0 +1,111 @@
+body {
+    background: none repeat scroll 0 0 #cccccc;
+    min-width: 240px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#wrapper {
+    background: none repeat scroll 0 0 #ffffff;
+    padding: 10px 140px;
+    margin: 100px 0px;
+    min-width: 340px;
+}
+#green {
+    height:400px;
+    margin: 0 10px;
+    min-width: 100px;
+    overflow: scroll;
+    width: 100%;
+}
+#red {
+    height:200px;
+    margin-left: -98.5%;
+    padding: 0 10px;
+    right: 170px;
+    width: 100px;
+}
+#blue {
+    height:300px;
+    margin-right: -100%;
+    padding: 0 10px;
+    width: 100px;
+}
+#footer {
+    clear: both;
+}
+
+* html #left {
+    left: 150px;
+}
+
+#red {
+    background: none repeat scroll 0 0 red;
+}
+#green {
+    background: none repeat scroll 0 0 white;
+}
+#blue {
+    background: none repeat scroll 0 0 blue;
+}
+.column {
+    padding-top: 1em;
+    text-align: justify;
+}
+
+table {
+  font-family: 'Arial';
+  margin: 0px auto;
+  border-collapse: collapse;
+  border: 1px solid #eee;
+  border-bottom: 2px solid #00cccc;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
+     0px 10px 20px rgba(0,0,0,0.05),
+     0px 20px 20px rgba(0,0,0,0.05),
+     0px 30px 20px rgba(0,0,0,0.05);
+}
+
+
+#varialble_table tr {
+    height: 30px;
+}
+
+#varialble_table tr:hover {
+    background-color: #f4f4f4;
+}
+#varialble_table tr.selected {
+      background-color: #CCC;
+}
+#varialble_table tr.selected div#bar{
+    background-color:red !important;
+}
+#varialble_table td {
+    border-top: 3px solid #000;
+    color: #000000;
+    padding: 6px 8px;
+}
+
+td.row_name {
+    width: 20%;
+}
+td.row_progress {
+    width: 40%;
+}
+td.row_checkbox {
+    text-align: center;
+    width: 10%; 
+}
+
+.column {
+	float: left;
+	padding-top: 1em;
+    text-align: justify;
+}
+
+.column {
+    float: left;
+    position: relative;
+}
+.clearer {
+	clear:both;
+}

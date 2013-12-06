@@ -1,0 +1,33 @@
+What is a Web Worker
+
+A web worker, in Javascript, is a process that runs in the background and so does not affect the running of other scripts or the web page itself. It does not block the user interface and it runs in its own thread.
+
+How would you implement a web worker that calculates the nth number on the fibonacci series?
+
+var webWorker = new Worker('fibonacciSeries.js'); webWorker.addEventListener('message', function(event) {
+	console.log('Web Worker: ', event.data);
+}, false); webWorker.postMessage({'length': 15});
+
+fibonacciSeries.js
+self.addEventListener('message', function(event) { var length = event.data.length;
+
+	var series = [];
+	for(var i=0;i<length;i++){
+		if(i<2)	{
+			series[i+1]=series[i]+i;
+		}else{
+			series[i+1]=series[i-1]+series[series.length-1];
+		}
+	}
+
+	self.postMessage(series);
+
+}, false);
+
+What is prototypal inheritance?
+
+This is where one object can inherit the properties of another object. If we are dealing with the Child Object it would inherit the properties of the parent and retain its own properties.
+
+What does the var keyword do?
+
+It is used to declare a variable in Javascript. It used within the scope of a funciont then it creates a local variable in the current execution context, in the global context there is no real difference.
